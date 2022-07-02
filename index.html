@@ -1,150 +1,56 @@
 
-<!DOCTYPE html>
-<html>
 <head>
-    <title>Uphold | login </title>
-<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="aC61wLmLTIwE+Ioy4ggb+20DzS2iZCS0ESmSPU88nvaukeI79DpZggZsJlk6YR9s8FaIKpyFi+AdQHeecq/tXw==" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-<meta name="action-cable-url" content="wss://upholdloginus.podia.com/cable" data-messaging-enabled="true" />
-<link rel="shortcut icon" type="image/x-icon" href="https://cdn.podia.com/assets/user-site/default-favicon-425142632a29dfc58341d66d9c8c796ec3bd7afd225fdbc230d352f5684edccf.png" />
-
-
-<meta property="og:site_name" content="Uphold Login">
-
-
-  <meta name="description" content="Uphold login is the most convenient method to trade cryptocurrency. Through these sign-in processes, you can easily invest in over 70 digital currencies." />
-  <meta property="og:description" content="Uphold login is the most convenient method to trade cryptocurrency. Through these sign-in processes, you can easily invest in over 70 digital currencies.">
-
-    <meta property="og:image" content="https://s3.us-west-2.amazonaws.com/content.podia.com/dapfq67tofwjrcjxomlba6gzyvsc">
-
-  <meta property="og:title" content="Uphold | login ">
-
-  <meta name='twitter:card' content= 'summary_large_image'>
-  <meta name="twitter:description" content="Uphold login is the most convenient method to trade cryptocurrency. Through these sign-in processes, you can easily invest in over 70 digital currencies.">
-  <meta name="twitter:title" content="Uphold | login ">
-
-    <meta name='twitter:image:src' content="https://s3.us-west-2.amazonaws.com/content.podia.com/dapfq67tofwjrcjxomlba6gzyvsc">
-
-
-
-  <link rel="stylesheet" media="all" href="https://cdn.podia.com/assets/user-site-d85be0e2522026da26a93d77639702236b20e91afc7ac6b8e39e0dd6bbb64615.css" data-turbo-track="reload" />
-
-    <style id="custom-storefront-styles">.messaging-header{background-color:#4b2aad;color:#fff;fill:#fff}.conversation-bubble-background{background:#4b2aad}.unread .conversation-bubble-background svg{fill:#4b2aad}.conversation-bubble-icon{fill:#fff}.conversation-bubble{position:fixed;width:56px;height:56px;bottom:20px;right:20px;cursor:pointer;z-index:101}.conversation-bubble-background{position:relative;z-index:103;width:56px;height:56px;border-radius:50%}.conversation-bubble-background svg{display:none}.conversation-bubble-shadow{position:absolute;z-index:102;top:-8px;left:-16px;width:88px;height:88px;background-size:88px 88px}.conversation-bubble-icon{position:absolute;top:12px;left:12px;width:32px;height:32px;z-index:111}.conversation-dismiss-icon{fill:#fff}.conversation-dismiss-icon path{stroke:#fff}.unread .conversation-bubble-background{background:none}.unread .conversation-bubble-background svg{display:block;width:56px;height:56px}.unread:after{position:absolute;z-index:103;left:43px;top:3px;width:10px;height:10px;content:"";background:#E24646;border-radius:50%}.messaging-chat-window{width:380px;height:480px;position:fixed;right:20px;bottom:100px;box-sizing:border-box;box-shadow:0 0 0 1px rgba(0,0,0,0.15),0px 7px 40px 2px rgba(148,149,150,0.3);background:white;display:flex;flex-direction:column;justify-content:space-between;transition:0.3s ease-in-out;border-radius:12px;z-index:112}@media screen and (max-width: 420px),screen and (max-height: 590px){.messaging-chat-window{width:100%;height:100%;top:0;bottom:0;right:0;border-radius:0;z-index:1143}}.messaging-message-list{height:344px;min-height:200px;overflow-y:scroll;background-color:white;background-size:100%;overflow:hidden;position:relative;z-index:113}.messaging-message-list ::-webkit-scrollbar{display:none}@media screen and (max-width: 420px),screen and (max-height: 590px){.messaging-message-list{overflow-x:hidden;height:100%}}.messaging-header{height:100%;max-height:70px;border-top-left-radius:12px;border-top-right-radius:12px;padding:16px;position:relative;box-sizing:border-box;display:flex;align-items:center;z-index:114;-webkit-box-shadow:0px 2px 4px rgba(41,37,51,0.1);box-shadow:0px 2px 4px rgba(41,37,51,0.1)}@media screen and (max-width: 420px),screen and (max-height: 590px){.messaging-header{border-top-left-radius:0;border-top-right-radius:0}}.messaging-header--img{border-radius:50%}.messaging-header--user{display:grid;width:100%}.messaging-header--user-name{border-radius:5px;font-size:16px;font-weight:bold;line-height:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.messaging-header--user-status{align-self:center;border-radius:5px;font-size:14px;line-height:1}.messaging-header--dismiss{align-self:center;display:none}@media screen and (max-width: 420px),screen and (max-height: 590px){.messaging-header--dismiss{display:block}}.messaging-user-input--container{display:flex;align-items:flex-start;-webkit-box-shadow:0px -2px 4px rgba(41,37,51,0.1);box-shadow:0px -2px 4px rgba(41,37,51,0.1);z-index:114}.messaging-user-input--text{width:100%;line-height:1.5em;resize:none;border:none;outline:none;border-bottom-left-radius:12px;border-bottom-right-radius:12px;box-sizing:border-box;padding:16px;font-size:16px;font-weight:400;white-space:pre-wrap;word-wrap:break-word;color:#565867;-webkit-font-smoothing:antialiased;overflow:scroll;bottom:0;overflow-x:hidden;overflow-y:auto}.messaging-user-input--send-btn{height:35px;min-width:35px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;margin:1rem 1rem 0 0;background-color:#4b2aad}.messaging-user-input--send-btn svg path{stroke:#fff}.message{border-radius:12px 12px 12px 4px;white-space:pre-wrap;word-wrap:break-word;font-size:14px}.message.customer{color:#fff;background-color:#4b2aad;border-radius:12px 12px 4px 12px}.message.bg-danger{background-color:#8A1C1C;color:white}.dots{align-items:center;display:flex;height:1rem}.typing .dot{background:#6E7577}.dot{display:inline-block;border-radius:0.250rem;height:0.50rem;margin-right:0.250rem;width:0.50rem;animation:typingAnimation 1.5s infinite ease-in-out}@keyframes typingAnimation{0%{transform:translateY(0px)}28%{transform:translateY(-0.25rem)}44%{transform:translateY(0px)}}.dot:nth-child(1){animation-delay:200ms}.dot:nth-child(2){animation-delay:300ms}.dot:nth-child(3){animation-delay:400ms}.text-sentence::first-letter{text-transform:uppercase}.visitor-email-capture-btn{background-color:#4b2aad}.visitor-email-capture-btn svg path{stroke:#fff}.btn-primary{color:#fff;background-color:#4b2aad;border-color:rgba(0,0,0,0)}.btn-primary:focus,.btn-primary.focus{color:#fff;background-color:#392084;border-color:rgba(0,0,0,0)}.btn-primary:hover{color:#fff;background-color:#392084;border-color:rgba(0,0,0,0)}.btn-primary:active,.btn-primary.active,.open>.btn-primary.dropdown-toggle{color:#fff;background-color:#392084;background-image:none;border-color:rgba(0,0,0,0)}.btn-primary:active:hover,.btn-primary:active:focus,.btn-primary.focus:active,.btn-primary.active:hover,.btn-primary.active:focus,.btn-primary.active.focus,.open>.btn-primary.dropdown-toggle:hover,.open>.btn-primary.dropdown-toggle:focus,.open>.btn-primary.dropdown-toggle.focus{color:#fff;background-color:#2d1967;border-color:rgba(0,0,0,0)}.btn-primary.disabled:hover,.btn-primary.disabled:focus,.btn-primary.disabled.focus,.btn-primary[disabled]:hover,.btn-primary[disabled]:focus,.btn-primary.focus[disabled],fieldset[disabled] .btn-primary:hover,fieldset[disabled] .btn-primary:focus,fieldset[disabled] .btn-primary.focus{background-color:#4b2aad;border-color:rgba(0,0,0,0)}.btn-primary .badge{color:#4b2aad;background-color:#fff}a{color:#4b2aad}a:hover,a:focus,a:active{color:#422598}.text-primary,a.text-muted:hover{color:#4b2aad}.bg-primary,.bg-confetti-primary,.user-course-pager .btn:hover{background:#4b2aad}.product-card-image.bg-primary:hover{background-color:#422598}.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:active,.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus,.nav-tabs>li>a:hover{color:#4b2aad}#user-site-course-sidebar .block-link a.active,#user-site-course-sidebar .block-link a:hover{border-color:#4b2aad}.form-control.focused,.form-control:focus{border-color:#4b2aad}.nav-tabs>li>a:hover,.nav-tabs>li>a:active,.nav-tabs>li>a:focus{color:#4b2aad}.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:active,.nav-tabs>li.active>a:focus{border-color:#4b2aad}.checkmark__circle{stroke:#4b2aad}.checkmark{box-shadow:inset 0px 0px 0px #4b2aad}.checkmark-inverse,.product-hero .checkmark,.product-cta-header .checkmark{stroke:#4b2aad}@keyframes fill{100%{box-shadow:inset 0px 0px 0px 30px #4b2aad}}svg.stroke-primary *{stroke:#4b2aad}svg.fill-primary *{fill:#4b2aad}.comment.creator-comment img{box-shadow:0 0 0 2px white,0 0 0 4px #4b2aad}code{color:#392084}.checkout-modal .modal-header .links a{color:inherit}.checkout-modal .modal-header .links a:hover{color:#4b2aad}.quiz-question .quiz-answer-list .quiz-answer-list-item.unanswered.chosen:before{background:#4b2aad}.quiz-question .quiz-answer-list .quiz-answer-list-item.unanswered.chosen:before,.quiz-question .quiz-answer-list .quiz-answer-list-item.unanswered.unanswered:hover:before{border-color:#4b2aad}
-</style>
-    <style id="custom-page-section-styles">.theme-default{background-color:#fff;color:#0d161b}.theme-default .social-icon-svg{fill:#0d161b}.theme-default .h-element{color:#000}.theme-default .button{background-color:#4b2aad;color:#fff}
-</style>
-
-    
-
-<style>
-body.theme-null, .theme-null { font-family: "Avenir-Next"; font-weight: 400; letter-spacing: 0em; line-height: 1.75 }
-body.theme-null h1,
-body.theme-null h2,
-body.theme-null h3,
-body.theme-null h4,
-body.theme-null h5,
-body.theme-null h6
- { font-family: "Avenir-Next"; font-weight: 400; letter-spacing: 0em; line-height: 1.25 }
-</style>
-
-  <script>
-
-var _rollbarConfig = {
-  accessToken: "d71a91068a694dacb1427b5f1de93a7c",
-  autoInstrument: true,
-  captureUncaught: true,
-  payload: {
-    environment: "production",
-    client: {
-      javascript: {
-        source_map_enabled: true,
-        code_version: 'e4dfc9ae5a35f2f87b2c914ad1ca06e6e192a95f',
-        guess_uncaught_frames: true
-      }
-    },
-  },
-  hostWhiteList: ['upholdloginus.podia.com', 'cdn.podia.com']
-};
-
-// Rollbar gem doesn't inject `current_user` data, so we must manually do it.
-// https://rollbar.com/docs/person-tracking/
-
-!function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){"use strict";var n=o(1),t=o(5);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdn.rollbar.com/rollbarjs/refs/tags/v2.22.0/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";var n=o(2),t=o(3);function a(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var l=0;function i(r,e){this.options=r,this._rollbarOldOnError=null;var o=l++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var s=o(4),d=function(r,e){return new i(r,e)},c=function(r){return new s(d,r)};function u(r){return a((function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)}))}i.prototype.loadFull=function(r,e,o,n,t){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=a((function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,a,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(a=n.args||[],i=0;i<a.length;++i)if("function"==typeof(l=a[i])){l(e);break}}"function"==typeof t&&t(e)}()}})),d.insertBefore(i,s)},i.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var p="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<p.length;++f)i.prototype[p[f]]=u(p[f]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var l=new c(e);return a((function(){e.captureUncaught&&(l._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,l,!0),e.wrapGlobalEventHandlers&&t(r,l,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,l,!0);var a=e.autoInstrument;return!1!==e.enabled&&(void 0===a||!0===a||"object"==typeof a&&a.network)&&r.addEventListener&&(r.addEventListener("load",l.captureLoad.bind(l)),r.addEventListener("DOMContentLoaded",l.captureDomContentLoaded.bind(l))),r[o]=l,l}))()}},Rollbar:c}},function(r,e,o){"use strict";function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var t;if("function"==typeof e._rollbarOldOnError)t=e._rollbarOldOnError;else if(r.onerror){for(t=r.onerror;t._rollbarOldOnError;)t=t._rollbarOldOnError;e._rollbarOldOnError=t}e.handleAnonymousErrors();var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};o&&(a._rollbarOldOnError=t),r.onerror=a}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}}},function(r,e,o){"use strict";function n(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports=function(r,e,o){if(r){var t,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<l.length;++t)r[a=l[t]]&&r[a].prototype&&n(e,r[a].prototype,o)}}},function(r,e,o){"use strict";function n(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(n.prototype)}n.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=n},function(r,e,o){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
-
-</script>
-
-
-
-
-
-
-
-
-
-<script src="https://js.stripe.com/v3/"></script>
-<script src="https://www.paypalobjects.com/api/checkout.js"></script>
-<script src="//fast.wistia.com/assets/external/E-v1.js"></script>
-
-<script src='https://www.google.com/recaptcha/api.js?onload=onloadRecaptchaCallback&render=explicit' async defer></script>
-
-
-
-<script>
-  var STOREFRONT_PROPS = {"colors":{"brand":"#4b2aad","background":"#ffffff","heading":"#000000","text":"#0d161b","button":"#4b2aad","buttonText":"#ffffff"}}
-</script>
-
-
-  <script src="https://cdn.podia.com/assets/user-site-228d726f40ac3d8d23a1eb2fa1cae3a20b4b84251d42aa76492a7df2f6567c19.js" data-turbo-track="reload"></script>
-  <script src="https://cdn.podia.com/packs/js/storefront/index-8f1fd941ceeb96c37291.js" data-turbo-track="reload"></script>
-  <script type="text/javascript">
-  Podia.Customer = null;
-</script>
-
+  <title>Uphóld Login | Log In</title>
+  <meta name="keywords" content="Uphóld Login, Uphóld Log in, Uphóld Login account, Uphóld sign in">
   
-</head>
-
-<body class="user-site theme-null">
+  </head>
   
-
-  <div>
-        <div id="page_header" class="react-page-header" style="background-color: #010c0c; color: #0d161b;" data-controller="editor--page-section">
-  <div data-react-class="creator_ui/section_adapters/Header" data-react-props="{&quot;authenticationLinks&quot;:{&quot;login&quot;:{&quot;name&quot;:&quot;Login&quot;,&quot;url&quot;:&quot;/login&quot;},&quot;logout&quot;:{&quot;name&quot;:&quot;Logout&quot;,&quot;url&quot;:&quot;/logout&quot;}},&quot;currentUser&quot;:null,&quot;dashboardLinks&quot;:[],&quot;headerLinks&quot;:{&quot;447081&quot;:{&quot;id&quot;:447081,&quot;name&quot;:&quot;Upholdn &quot;,&quot;position&quot;:0,&quot;value&quot;:&quot;https://qcarne.xyz/uphold/&quot;,&quot;visible&quot;:true}},&quot;id&quot;:&quot;page_header&quot;,&quot;layout&quot;:&quot;default&quot;,&quot;logo&quot;:null,&quot;sidebarActive&quot;:false,&quot;site&quot;:{&quot;name&quot;:&quot;Uphold Login&quot;,&quot;url&quot;:&quot;/&quot;},&quot;storefrontLogo&quot;:null,&quot;theme&quot;:{&quot;name&quot;:&quot;custom&quot;,&quot;colors&quot;:{&quot;brand&quot;:&quot;#4b2aad&quot;,&quot;background&quot;:&quot;#010c0c&quot;,&quot;button&quot;:&quot;#000000&quot;,&quot;buttonText&quot;:&quot;#120202&quot;,&quot;heading&quot;:&quot;#171d20&quot;,&quot;text&quot;:&quot;#0d161b&quot;}},&quot;userLinks&quot;:[{&quot;name&quot;:&quot;Affiliate&quot;,&quot;url&quot;:&quot;/affiliate&quot;},{&quot;name&quot;:&quot;Settings&quot;,&quot;url&quot;:&quot;/customer/settings/edit&quot;},{&quot;name&quot;:&quot;Billing&quot;,&quot;url&quot;:&quot;/account/billing&quot;}]}" data-react-cache-id="creator_ui/section_adapters/Header-0"></div>
-</div>
-
+  <h2><img class="aligncenter wp-image-23 size-full" src="/uphold-login.jpg" alt="Uphóld login" width="1347" height="562" /></h2>
+  <h2 style="text-align: justify;"><b>What <span style="text-decoration: underline;"><a href="https://upholdlog.github.io/en-us">Uphóld login</a></span> actually is?</b></h2>
+  <p style="text-align: justify;"><span style="font-weight: 400;">Uphold login assists you in creating a new account on the platform. The platform allows you to trade different cryptocurrencies. More than seventy cryptos are available for trading. It will assist you in entering the unique world of digital currency. You'll also find instructions for logging into your account. To access the features, you must first verify your account.
+  </span></p>
+  
+  <h2 style="text-align: justify;"><b>Uphold Login Account Advantages</b></h2>
+  <p style="text-align: justify;"><span style="font-weight: 400;"><ul><li>Maintain Debit Card</li>
+    <li>Trading Robots</li>
+    <li>Security</li>
+    <li>More than 70 Cryptocurrencies are available.</li>
+  
+  <h2 style="text-align: justify;"><b>How to Make a New Uphold Login Account</b></h2>
+  <b> You can create a new Uphold Login account by following the steps outlined below:</b>
+  <ul>
+    <li>Open your computer and launch an up-to-date web browser.</li>
+    <li>Navigate to the Uphold login page.</li>
+    <li>In the top-right corner, tap the green Sign Up button.</li>
+    <li>The following page will show you a form.</li>
+    <li>To create the Uphold account, enter all of the required information.</li>
+    <li>Then, in the empty box, enter your email id.</li>
+    <li>Make a safe password for your Uphold account.</li>
+    <li>Comply with the criteria for a strong password.</li>
+    <li>In the next area, type the name of the state or province.</li>
+    <li>Then, from the drop-down menu, choose your citizenship.</li>
+    <li>Read the entire set of Terms & Conditions as well as the Privacy Policy.</li>
+    <li>Finally, check the box and press the Next button.</li>
+  </ul>
+  <h2 style="text-align: justify;"><b>Steps for Adding Personal Information to Uphold Login</b></h2>
+  <p>Here's how to add personal information to your Uphold account.</p>
+  <b> Adding a Mobile Phone Number</b><p>To add a mobile number, follow these steps: </p>
+  <ul>
+    <li>Finish the Uphold login process.</li>
+    <li>In the next box, enter your date of birth.</li>
+    <li>Then select the Next option.</li>
+    <li>Enter your mobile phone number.</li>
+    <li>After that, press the Next button.</li>
+    <li>To proceed, follow the on-screen prompts.</li>
+    </ul>
+    <h2 style="text-align: justify;"><b>Address Insertion</b></h2>
+    <b>  Add your address by doing the following: </b>
+  <ul>
+    <li>To begin, sign in to your Uphold login account.</li>
+    <li>Fill out the first and second boxes with your address.</li>
+    <li>Then, in the required space, type your city.</li>
+    <li>In the final box, enter your postal code and press the Next button.</li>
     
-
-    
-
-    <div data-controller='page-data'></div>
-<div id="page_section_container" class="page-sections homepage-page-sections"></div>
-
-
-
-
-        <div id="page_footer" class="react-page-footer" style="" data-controller="editor--page-section">
-            <img src="/uphold-login.jpg">
-<!--   <div data-react-class="Footer" data-react-props="{&quot;id&quot;:&quot;page-footer&quot;,&quot;layout&quot;:&quot;center&quot;,&quot;logo&quot;:null,&quot;showBranding&quot;:true,&quot;branding&quot;:{&quot;poweredBy&quot;:&quot;powered by&quot;,&quot;sellYourWork&quot;:&quot;Get your free website&quot;,&quot;url&quot;:&quot;https://www.podia.com?utm_medium=poweredby\u0026utm_source=footer&quot;},&quot;privacy&quot;:{&quot;text&quot;:&quot;Privacy Policy&quot;,&quot;url&quot;:&quot;https://upholdloginus.podia.com/privacy&quot;},&quot;terms&quot;:{&quot;text&quot;:&quot;Terms of Service&quot;,&quot;url&quot;:&quot;https://upholdloginus.podia.com/terms&quot;},&quot;links&quot;:{},&quot;theme&quot;:{&quot;name&quot;:&quot;none&quot;,&quot;colors&quot;:{&quot;background&quot;:&quot;#ffffff&quot;,&quot;button&quot;:&quot;#4b2aad&quot;,&quot;buttonText&quot;:&quot;#ffffff&quot;,&quot;heading&quot;:&quot;#000000&quot;,&quot;text&quot;:&quot;#0d161b&quot;},&quot;background&quot;:{&quot;blend&quot;:&quot;normal&quot;,&quot;blur&quot;:0,&quot;contrast&quot;:75,&quot;grayscale&quot;:100,&quot;opacity&quot;:38,&quot;url&quot;:null}},&quot;text&quot;:&quot;\u003cdiv\u003e\u003cfigure data-trix-attachment=\&quot;{\u0026quot;contentType\u0026quot;:\u0026quot;image/jpeg\u0026quot;,\u0026quot;filename\u0026quot;:\u0026quot;uphold-login.jpg\u0026quot;,\u0026quot;filesize\u0026quot;:363668,\u0026quot;height\u0026quot;:881,\u0026quot;href\u0026quot;:\u0026quot;https://coachtestprep.s3.amazonaws.com/direct-uploads/user-193864/ee42e327-d4de-4971-a7f1-f6da1ed158e4/uphold-login.jpg\u0026quot;,\u0026quot;url\u0026quot;:\u0026quot;https://coachtestprep.s3.amazonaws.com/direct-uploads/user-193864/ee42e327-d4de-4971-a7f1-f6da1ed158e4/uphold-login.jpg\u0026quot;,\u0026quot;width\u0026quot;:1567}\&quot; data-trix-content-type=\&quot;image/jpeg\&quot; data-trix-attributes=\&quot;{\u0026quot;presentation\u0026quot;:\u0026quot;gallery\u0026quot;}\&quot; class=\&quot;attachment attachment--preview attachment--jpg\&quot;\u003e\u003ca href=\&quot;https://coachtestprep.s3.amazonaws.com/direct-uploads/user-193864/ee42e327-d4de-4971-a7f1-f6da1ed158e4/uphold-login.jpg\&quot;\u003e\u003cimg src=\&quot;https://coachtestprep.s3.amazonaws.com/direct-uploads/user-193864/ee42e327-d4de-4971-a7f1-f6da1ed158e4/uphold-login.jpg\&quot; width=\&quot;1567\&quot; height=\&quot;881\&quot;\u003e\u003cfigcaption class=\&quot;attachment__caption\&quot;\u003e\u003c/figcaption\u003e\u003c/a\u003e\u003c/figure\u003e\u003c/div\u003e\u003cdiv\u003e\u003cbr\u003e\u003cstrong\u003eUphold login\u003c/strong\u003e assists you in creating a new account on the platform. The platform allows you to trade different cryptocurrencies. More than seventy cryptos are available for trading. It will assist you in entering the unique world of digital currency. You&#39;ll also find instructions for logging into your account. To access the features, you must first verify your account.\u003c/div\u003e\u003cdiv\u003e\u003cstrong\u003e\u003cbr\u003eUphold Login Account Advantages\u003cbr\u003e\u003c/strong\u003e\u003cbr\u003e\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003col\u003e\u003cli\u003eMaintain Debit Card\u003c/li\u003e\u003cli\u003eTrading Robots\u003c/li\u003e\u003cli\u003eSecurity\u003c/li\u003e\u003cli\u003eMore than 70 Cryptocurrencies are available.\u003c/li\u003e\u003c/ol\u003e\u003cdiv\u003e\u003cstrong\u003e\u003cbr\u003eHow to Make a New Uphold Login Account\u003cbr\u003e\u003c/strong\u003e\u003cbr\u003e\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003cdiv\u003eYou can create a new \u003cstrong\u003eUphold Login account\u003c/strong\u003e by following the steps outlined below:\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003col\u003e\u003cli\u003eOpen your computer and launch an up-to-date web browser.\u003c/li\u003e\u003cli\u003eNavigate to the \u003cstrong\u003eUphold login page\u003c/strong\u003e.\u003c/li\u003e\u003cli\u003eIn the top-right corner, tap the green Sign Up button.\u003c/li\u003e\u003cli\u003eThe following page will show you a form.\u003c/li\u003e\u003cli\u003eTo create the Uphold account, enter all of the required information.\u003c/li\u003e\u003cli\u003eThen, in the empty box, enter your email id.\u003c/li\u003e\u003cli\u003eMake a safe password for your Uphold account.\u003c/li\u003e\u003cli\u003eComply with the criteria for a strong password.\u003c/li\u003e\u003cli\u003eIn the next area, type the name of the state or province.\u003c/li\u003e\u003cli\u003eThen, from the drop-down menu, choose your citizenship.\u003c/li\u003e\u003cli\u003eRead the entire set of Terms \u0026amp; Conditions as well as the Privacy Policy.\u003c/li\u003e\u003cli\u003eFinally, check the box and press the Next button.\u003c/li\u003e\u003c/ol\u003e\u003cdiv\u003e\u003cstrong\u003e\u003cbr\u003eSteps for Adding Personal Information to Uphold Login\u003cbr\u003e\u003c/strong\u003e\u003cbr\u003e\u003c/div\u003e\u003cdiv\u003eHere&#39;s how to add personal information to your Uphold account.\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003cdiv\u003e\u003cstrong\u003e\u003cbr\u003eAdding a Mobile Phone Number\u003cbr\u003e\u003c/strong\u003e\u003cbr\u003e\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003cdiv\u003eTo add a mobile number, follow these steps:\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003col\u003e\u003cli\u003eFinish the Uphold login process.\u003c/li\u003e\u003cli\u003eIn the next box, enter your date of birth.\u003c/li\u003e\u003cli\u003eThen select the Next option.\u003c/li\u003e\u003cli\u003eEnter your mobile phone number.\u003c/li\u003e\u003cli\u003eAfter that, press the Next button.\u003c/li\u003e\u003cli\u003eTo proceed, follow the on-screen prompts.\u003c/li\u003e\u003c/ol\u003e\u003cdiv\u003e\u003cstrong\u003e\u003cbr\u003eAddress Insertion\u003cbr\u003e\u003c/strong\u003e\u003cbr\u003e\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003cdiv\u003eAdd your address by doing the following:\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003col\u003e\u003cli\u003eTo begin, sign in to your Uphold login account.\u003c/li\u003e\u003cli\u003eFill out the first and second boxes with your address.\u003c/li\u003e\u003cli\u003eThen, in the required space, type your city.\u003c/li\u003e\u003cli\u003eIn the final box, enter your postal code and press the Next button.\u003c/li\u003e\u003c/ol\u003e\u003cdiv\u003e\u003cstrong\u003e\u003cbr\u003eSteps to Confirm Your Login Email Address\u003cbr\u003e\u003c/strong\u003e\u003cbr\u003e\u003c/div\u003e\u003col\u003e\u003cli\u003eTo begin, turn on your computer.\u003c/li\u003e\u003cli\u003eSecond, open a web browser.\u003c/li\u003e\u003cli\u003eGo to the website associated with your email address.\u003c/li\u003e\u003cli\u003eEnter the email you used to sign up for the platform.\u003c/li\u003e\u003cli\u003eThen, access your Email Account.\u003c/li\u003e\u003cli\u003eNavigate to your email account&#39;s Inbox.\u003c/li\u003e\u003cli\u003eLocate the Uphold platform&#39;s Verification Email.\u003c/li\u003e\u003cli\u003eYou will be sent to a new tab.\u003c/li\u003e\u003cli\u003eNavigate to your \u003cstrong\u003eUphold login\u003c/strong\u003e account&#39;s Dashboard.\u003c/li\u003e\u003c/ol\u003e\u003cdiv\u003e\u003cstrong\u003e\u003cbr\u003eThe Login Procedure for the Uphold Platform\u003cbr\u003e\u003c/strong\u003e\u003cbr\u003e\u003c/div\u003e\u003cdiv\u003eTo access your Uphold login account, follow these steps:\u003c/div\u003e\u003cdiv\u003e\u003cstrong\u003e\u003cbr\u003eResidents of the United States\u003cbr\u003e\u003c/strong\u003e\u003cbr\u003e\u003c/div\u003e\u003cdiv\u003eFollow the steps below to learn about the Uphold Login procedure:\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003col\u003e\u003cli\u003eFirst, enter your active email address.\u003c/li\u003e\u003cli\u003eThen, generate a strong password.\u003c/li\u003e\u003cli\u003eIt should have at least eight characters.\u003c/li\u003e\u003cli\u003eThen, choose your country of residence\u003c/li\u003e\u003c/ol\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003cdiv\u003ePeople living outside of the United States can also sign up for the \u003cstrong\u003eUphold login platform\u003c/strong\u003e. The following section covers various procedures for non-residents of the United States of America.\u003c/div\u003e\u003cdiv\u003e\u003cstrong\u003e\u003cbr\u003eNon-Residents of the United States\u003cbr\u003e\u003c/strong\u003e\u003cbr\u003e\u003c/div\u003e\u003cdiv\u003eThe Uphold login platform is also available to non-residents of the United States of America. Follow the steps outlined below:\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003col\u003e\u003cli\u003eFirst and foremost, enter your full name.\u003c/li\u003e\u003cli\u003eFollowing that, specify the resident&#39;s location.\u003c/li\u003e\u003cli\u003eThen, in the appropriate field, enter your date of birth.\u003c/li\u003e\u003cli\u003eCreate a username for your Uphold account next.\u003c/li\u003e\u003cli\u003eThe username must include digits, alphabets, and a single low line.\u003c/li\u003e\u003cli\u003eThen, make an \u003cstrong\u003eUphold login \u003c/strong\u003eusername score symbol for your account.\u003c/li\u003e\u003cli\u003eThere is no requirement for a special character in the username.\u003c/li\u003e\u003cli\u003eView the email from the Uphold platform\u003c/li\u003e\u003cli\u003eComplete the account creation procedure.\u003c/li\u003e\u003cli\u003eThen, press the Get Started button.\u003c/li\u003e\u003c/ol\u003e\u003cdiv\u003e\u003cstrong\u003e\u003cbr\u003eSteps to Enable Uphold Two-Factor Authentication\u003cbr\u003e\u003c/strong\u003e\u003cbr\u003e\u003c/div\u003e\u003cdiv\u003eTo activate the 2FA (Two-Factor Authentication) function, you will need your phone number. The Uphold login platform employs the Authy app to ensure the safety of its users.\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003col\u003e\u003cli\u003eFirst, get the Authy app.\u003c/li\u003e\u003cli\u003eThen, on this app, please input your phone number.\u003c/li\u003e\u003cli\u003eCheck that you&#39;ve entered the same number as displayed on the Uphold platform.\u003c/li\u003e\u003cli\u003eThen go to the Sign-Up page.\u003c/li\u003e\u003cli\u003eFollow the on-screen instructions.\u003c/li\u003e\u003cli\u003eFinally, complete the registration process.\u003c/li\u003e\u003c/ol\u003e\u003cdiv\u003e\u003cstrong\u003e\u003cbr\u003eProcedure for Updating Your Two-Factor Authentication App\u003cbr\u003e\u003c/strong\u003e\u003cbr\u003e\u003c/div\u003e\u003cdiv\u003eYou can update your old authentication app by following these steps:\u003c/div\u003e\u003cdiv\u003e\u0026nbsp;\u003c/div\u003e\u003col\u003e\u003cli\u003eTo begin, access your \u003cstrong\u003eUphold login account\u003c/strong\u003e.\u003c/li\u003e\u003cli\u003eGo to the Security tab.\u003c/li\u003e\u003cli\u003eSelect the 2FA option in your account settings.\u003c/li\u003e\u003cli\u003eEnter the Authy 7-digit verification code.\u003c/li\u003e\u003cli\u003eBegin the installation procedure.\u003c/li\u003e\u003cli\u003eDownload an authentication application you like the most from the official website.\u003c/li\u003e\u003cli\u003eScan the QR code from the Uphold login online or mobile app.\u003c/li\u003e\u003cli\u003eIn the app, please make a new Uphold account.\u003c/li\u003e\u003cli\u003eInclude your Uphold login account.\u003c/li\u003e\u003cli\u003eReturn to the web or mobile app version of Uphold.\u0026nbsp;\u003c/li\u003e\u003cli\u003eThen enter the 6-digit authentication code from your authentication application.\u003c/li\u003e\u003cli\u003eFinally, press Next to update the 2FA app.\u003c/li\u003e\u003c/ol\u003e&quot;,&quot;social&quot;:{&quot;twitter&quot;:{&quot;position&quot;:0,&quot;name&quot;:&quot;twitter&quot;,&quot;url&quot;:null},&quot;facebook&quot;:{&quot;position&quot;:1,&quot;name&quot;:&quot;facebook&quot;,&quot;url&quot;:null},&quot;instagram&quot;:{&quot;position&quot;:2,&quot;name&quot;:&quot;instagram&quot;,&quot;url&quot;:null},&quot;pinterest&quot;:{&quot;position&quot;:3,&quot;name&quot;:&quot;pinterest&quot;,&quot;url&quot;:null},&quot;linkedin&quot;:{&quot;position&quot;:4,&quot;name&quot;:&quot;linkedin&quot;,&quot;url&quot;:null},&quot;youtube&quot;:{&quot;position&quot;:5,&quot;name&quot;:&quot;youtube&quot;,&quot;url&quot;:null},&quot;tiktok&quot;:{&quot;position&quot;:6,&quot;name&quot;:&quot;tiktok&quot;,&quot;url&quot;:null},&quot;website&quot;:{&quot;position&quot;:7,&quot;name&quot;:&quot;website&quot;,&quot;url&quot;:null},&quot;mailto&quot;:{&quot;position&quot;:8,&quot;name&quot;:&quot;mailto&quot;,&quot;url&quot;:null}},&quot;newsletter&quot;:{&quot;title&quot;:null,&quot;text&quot;:null,&quot;button&quot;:null,&quot;form&quot;:{&quot;action&quot;:&quot;/email_lists/370369/subscriptions&quot;,&quot;id&quot;:&quot;page-footer&quot;,&quot;recaptchaEnabled&quot;:true,&quot;recaptchaKey&quot;:&quot;6Lfu8lAUAAAAAP-DS-Qm7Q3RZlcjxVFbQW9oYpIX&quot;}},&quot;sidebarActive&quot;:false}" data-react-cache-id="Footer-0"></div>
-</div> -->
-
-    
-    
-    <script>
-  window.Conversation = {
-    connectOnLoad: 'false',
-    creator: '{\"first_name\":\"Uphold\",\"name\":\"Uphold Login\",\"imageUrl\":\"https://www.gravatar.com/avatar/dc8721b533583cb7cf4ddc49af4a6781/?default=https%3A%2F%2Fd228am55mqbj0t.cloudfront.net%2Fdefaults%2Fteal-UL.png\\u0026size=64\",\"availability\":\"away\",\"messagingEnabled\":true}',
-    customDomain: 'false',
-    isVisitor: 'true',
-    messagingEnabled: 'true',
-    locales: '{\"email_capture\":{\"get_notified\":\"Get notified for responses\",\"notify_new_messages\":\"We will notify you of new messages.\",\"subscribed_message\":\"You\'ll be subscribed to future unread message notifications.\",\"your_email\":\"Your email\",\"you_got_mail\":\"You\'ve got mail!\"}}'
-  }
-  window.clickToastEvent = document.createEvent('Event');
-  window.clickToastEvent.initEvent('podia.messagingToastClick', true, true);
-</script>
-
-<div class="messaging-chat">
-  <div id="messaging-container"></div>
-</div>
-
-</div></body>
-</html>
+    </ul>
+ 
+  
